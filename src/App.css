@@ -1,42 +1,129 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.custom-navbar {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-content {
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+  min-height: 100vh;
+  padding-bottom: 2rem;
 }
 
 .card {
-  padding: 2em;
+  border-radius: 1rem !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
 }
 
-.read-the-docs {
-  color: #888;
+.card-title, h1, h2 {
+  font-weight: 600;
 }
+
+.card-text, .form-control, .btn {
+  font-size: 1.05rem;
+}
+
+footer {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  margin-top: 0 !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+footer a {
+  color: black;
+}
+
+footer a:hover {
+  color: #333333;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .main-content {
+  background: #1a1a1a;
+  color: #f1f1f1;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e !important;
+  color: white !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .btn {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+}
+
+body.dark-mode .custom-navbar,
+body.dark-mode footer {
+  background: linear-gradient(to right, #007bff, #00c6ff) !important;
+  color: black;
+}
+
+body.dark-mode .custom-navbar,
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+  color: black !important;
+}
+
+body.dark-mode .custom-navbar i {
+  color: black !important;
+}
+
+body.dark-mode a {
+  color: #4da3ff;
+}
+
+body.dark-mode a:hover {
+  color: #90cdf4;
+}
+
+body.dark-mode footer a {
+  color: white;
+}
+
+body.dark-mode footer a:hover {
+  color: #cccccc;
+}
+
+body.dark-mode .app-title {
+  color: #f9f9f9;
+}
+
+body.dark-mode .card-title {
+  color: #ffffff;
+}
+
+.navbar-title-light {
+  color: white;
+}
+
+.navbar-title-dark {
+  color: #f1f1f1;
+}
+
+body,
+.card,
+.navbar,
+footer,
+.form-control,
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.forecast-box {
+  background-color: #f8f9fa;
+}
+
+body.dark-mode .forecast-box {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+
